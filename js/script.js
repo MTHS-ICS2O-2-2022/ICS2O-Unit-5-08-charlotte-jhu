@@ -10,19 +10,19 @@ function myButtonClicked() {
   // This function does division using a loop
   // input
   let number1 = parseInt(document.getElementById("number-1").value)
-  const number2 = parseInt(document.getElementById("number-2").value)
+  let number2 = parseInt(document.getElementById("number-2").value)
 
   // process
   let counter = 0
-  for (counter <= number2; counter ++;) {
-    number1 -= number1
+  while (number1 >= number2) {
+    number1 -= number2
+    counter++
   }
 
   // output
-  document.getElementById("answer").innerHTML =
-    number1 + " divided by " + number2 + " is " + counter
-
-  // remainder output
-  if (number1 != 0)
-  document.getElementById("remainder").innerHTML = "With a remainder of " + number1
+  if (number1 != 0) {
+  document.getElementById("answer").innerHTML = "The answer is " + counter + " with a remainder of " + number1
+  } else {
+  document.getElementById("answer").innerHTML = "The answer is "+ counter
+  }
 }
