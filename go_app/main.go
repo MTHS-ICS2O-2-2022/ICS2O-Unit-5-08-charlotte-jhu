@@ -17,7 +17,7 @@ func main() {
 	var counter = 0
 
 	// input
-	fmt.Println("Let's do division!")
+	fmt.Println("Let's do some division!")
 	fmt.Println()
 	fmt.Print("Enter the first number: ")
 	fmt.Scanln(&number1)
